@@ -1,11 +1,9 @@
 const axios = require('axios');
-const httpAdapter = require('axios/lib/adapters/http');
 const N3 = require('n3');
 const streamParser = new N3.StreamParser();
 
 axios.get('http://localhost:3000/', {
-    responseType: 'stream', 
-    adapter: httpAdapter
+    responseType: 'stream'
 }).then((response) => {
     const rdfStream = response.data;
     rdfStream.pipe(streamParser);
