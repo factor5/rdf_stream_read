@@ -1,0 +1,16 @@
+{
+  "name": "rdf_stream_read",
+  "version": "1.0.0",
+  "description": "Example for requesting rdf data and converting response stream to Qoads with the N3 library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Svilen Velikov",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "n3": "^1.1.1"
+  }
+}
